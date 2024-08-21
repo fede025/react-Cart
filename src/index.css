@@ -95,3 +95,8 @@ body {
     border-radius: 50%;
     margin-right: 10px;
 }
+
+.nav-bar-wrapper{
+   padding-left: 80px;
+   padding-right: 80px;
+}

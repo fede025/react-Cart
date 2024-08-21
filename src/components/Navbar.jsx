@@ -28,14 +28,14 @@ const Navbar = ({setdata, cart }) => {
             PANDA
           </Link>
 
-          <form onSubmit={handleSubmit} className="search-bar">
+          {/* <form onSubmit={handleSubmit} className="search-bar">
             <input
               value={searchTerm}
               onChange={(e) => setsearchTerm(e.target.value)}
               type="text"
               placeholder="Search Products"
             />
-          </form>
+          </form> */}
 
           <Link to={"/cart"} className="cart">
           <button type="button" className="btn btn-primary position-relative">
