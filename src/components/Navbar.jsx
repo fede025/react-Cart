@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { items } from "./data";
 import { IoCartSharp } from 'react-icons/io5';
-
 
 const Navbar = ({setdata, cart }) => {
   const location = useLocation();

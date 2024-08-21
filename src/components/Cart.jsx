@@ -27,7 +27,7 @@ const Cart = ({ cart, setcart }) => {
                       <h5 className="card-title">{product.title}</h5>
                       <p className="card-text">{product.description}</p>
                       <button className="btn btn-primary mx-3">
-                      {product.price} ₹
+                      ${product.price}
                       </button>
                       <button className="btn btn-warning">Buy Now</button>
                     </div>
