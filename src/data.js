@@ -27,7 +27,7 @@ export const items =  [
         imgSrc: 'https://m.media-amazon.com/images/I/61WYQoAqIWL._SY679_.jpg',
         amazonLink: 'https://amzn.to/44MiYi6',
         description: 'Casual Men T-shirt',
-        price: '79999',
+        price: '799',
       },
 
       

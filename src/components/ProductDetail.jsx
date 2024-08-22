@@ -62,7 +62,7 @@ const ProductDetail = ({cart, setcart}) => {
         <div className="text-center">
           <h1 className="card-title">{product.title}</h1>
           <p className="card-text">{product.description}</p>
-          <button className="btn btn-primary mx-3">{product.price} ₹</button>
+          <button className="btn btn-primary mx-3"> ${product.price} </button>
           <button
             onClick={() =>
               addToCart(
