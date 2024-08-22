@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { items } from "../data";
 import { IoCartSharp, IoSearchOutline } from 'react-icons/io5';
 
+
+
 const Navbar = ({setdata, cart }) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -24,7 +26,7 @@ const Navbar = ({setdata, cart }) => {
       <div className="nav-bar">
         
           <Link to={"/"} className="brand">
-            <img className="pandaLogo" src="src/public/Images/truePandaLogo.jpg" alt="" /> 
+            <img className="pandaLogo" src="/Images/truePandaLogo.jpg" alt="" />
             PANDA
           </Link>
           <Link to={"/cart"} className="cart-button">
