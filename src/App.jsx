@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ProductDetail from './components/ProductDetail'
 import Searchitem from './components/Searchitem'
 import Cart from './components/Cart'
-import { items } from './components/data'
+import { items } from './data'
 
 
 const App = () => {

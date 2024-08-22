@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { items } from './data';
+import { items } from '../data';
 import Product from './Product';
 
 const Searchitem = ({cart, setcart}) => {

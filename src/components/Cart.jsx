@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Cart = ({ cart, setcart }) => {
+  
   return (
     <>
       <div className="container my-5" style={{width:'54%'}}> 
