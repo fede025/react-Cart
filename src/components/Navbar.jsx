@@ -24,7 +24,7 @@ const Navbar = ({setdata, cart }) => {
       <div className="nav-bar">
         
           <Link to={"/"} className="brand">
-            <img className="pandaLogo" src="src\Images\truePandaLogo.jpg" alt="" /> 
+            <img className="pandaLogo" src="src/Images/truePandaLogo.jpg" alt="" /> 
             PANDA
           </Link>
           <Link to={"/cart"} className="cart-button">
