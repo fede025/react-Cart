@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
 import { items } from "../data";
 import { IoCartSharp, IoSearchOutline } from 'react-icons/io5';
-
-
 
 const Navbar = ({setdata, cart }) => {
   const location = useLocation();
@@ -63,6 +62,11 @@ const Navbar = ({setdata, cart }) => {
       )}
     </header>
   );
+};
+
+Navbar.propTypes = {
+  setdata: PropTypes.func.isRequired,
+  cart: PropTypes.array.isRequired
 };
 
 export default Navbar;

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { items } from "../data";
 import Product from "./Product";
 import { ToastContainer, toast } from "react-toastify";
+import PropTypes from 'prop-types';
 import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetail = ({cart, setcart}) => {
@@ -93,6 +94,19 @@ const ProductDetail = ({cart, setcart}) => {
       <Product cart={cart} setcart={setcart} items={relatedProducts} />
     </>
   );
+};
+
+ProductDetail.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      price: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      imgSrc: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  setcart: PropTypes.func.isRequired
 };
 
 export default ProductDetail;

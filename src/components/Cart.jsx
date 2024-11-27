@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Cart = ({ cart, setcart }) => {
   
@@ -59,5 +60,18 @@ const Cart = ({ cart, setcart }) => {
     </>
   )
 }
+
+Cart.propTypes = {
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      price: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      imgSrc: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  setcart: PropTypes.func.isRequired
+};
 
 export default Cart;

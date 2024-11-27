@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import PropTypes from 'prop-types';
 import "react-toastify/dist/ReactToastify.css";
 
 const Product = ({ items, cart, setcart }) => {
@@ -92,6 +93,20 @@ const Product = ({ items, cart, setcart }) => {
       </div>
     </>
   );
+};
+
+Product.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      price: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      imgSrc: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  cart: PropTypes.array.isRequired,
+  setcart: PropTypes.func.isRequired
 };
 
 export default Product;
